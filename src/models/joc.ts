@@ -4,6 +4,7 @@ export class Joc {
   public jugadors: any = [{nom:"Mono",imatge:"/assets/img/profile/monkey.png"},{nom:"Pingui",imatge:"/assets/img/profile/pinguin.svg"},{nom:"Josep",imatge:"/assets/img/profile/winkboy.svg"}]
   public stack: string[] = [];
   public playedCards: string[] = [];
+  public puntuacio: number[] = [0,0,0]
   public currentPlayer: number = 0;
 
   constructor() {
@@ -29,7 +30,6 @@ function shuffle(array: string[]) {
     currentIndex--;
 
     // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex], array[currentIndex]];
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
   }
 }
