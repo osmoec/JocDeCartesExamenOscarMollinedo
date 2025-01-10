@@ -1,5 +1,7 @@
 export class Joc {
-  public players: string[] = ['Alumne 1', 'Alumne 2', 'Alumne 3'];
+  public players: string[] = ["oscar", 'DAVID', 'ADRIA'];
+  public ruta: string[] = ["/assets/img/profile/monkey.png","/assets/img/profile/pinguin.svg","/assets/img/profile/winkboy.svg"]
+  public jugadors: any = [{nom:"oscar",imatge:"/assets/img/profile/monkey.png"},{nom:"David",imatge:"/assets/img/profile/pinguin.svg"},{nom:"oscar",imatge:"/assets/img/profile/winkboy.svg"}]
   public stack: string[] = [];
   public playedCards: string[] = [];
   public currentPlayer: number = 0;
