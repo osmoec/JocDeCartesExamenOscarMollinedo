@@ -13,7 +13,7 @@ export class JugadorComponent {
   @Input() posicio: any;
   @Input() ruta: any;
   @Input() puntuacio: any;
-
+ 
   constructor() {
 
   }
