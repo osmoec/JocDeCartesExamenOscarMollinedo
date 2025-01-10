@@ -1,6 +1,6 @@
 @for (player of game?.jugadors; track player; let i = $index){
   <app-jugador
-    [ngStyle]="{ 'top.px': 100 + i * 120 }"
+    [ngStyle]="{ 'top.px': 100 + i * 120 },{'':ba}"
     [name] = "player.nom"
     [ruta]="player.imatge"
     [posicio] = i
@@ -50,5 +50,12 @@
   </div>
 
   <div style="font-size: 100px">carta actual: {{currentCard}}</div>
+
+  <div>
+    <p>resultats joc</p>
+    @for (player of game?.jugadors; track player){
+        <p style="font-size: 100px">{{player.name}}</p>
+    }
+  </div>
 
 </div>

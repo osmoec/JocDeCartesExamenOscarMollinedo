@@ -35,8 +35,7 @@ export class JocComponent implements OnInit {
   newGame() {
     this.game = new Joc();
     console.log(this.game)
-    // @ts-ignore
-    document.getElementById(String(this.jugador)).style.backgroundColor = "red"
+    document.getElementById(""+"").style.backgroundColor = "red"
   }
 
   takeCard() {
@@ -59,7 +58,10 @@ export class JocComponent implements OnInit {
       else if (this.jugador == 2){
         // @ts-ignore
         document.getElementById("Josep").innerText = this.puntuacioA
+
+
       }
+
 
       setTimeout(()=> {
         this.game?.playedCards.push(this.currentCard);
